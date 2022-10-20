@@ -1,0 +1,37 @@
+{
+    "name": "demo",
+    "version": "0.0.1",
+    "scripts": {
+        "ng": "ng",
+        "build": "ng build --configuration development",
+        "deploy": "ng build --configuration development --output-path docs --base-href /demo/ && copy docs\\index.html docs\\404.html",
+        "start": "ng serve --configuration development"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^14.2.6",
+        "@angular/cdk": "^14.2.5",
+        "@angular/common": "^14.2.6",
+        "@angular/compiler": "^14.2.6",
+        "@angular/core": "^14.2.6",
+        "@angular/flex-layout": "^14.0.0-beta.41",
+        "@angular/forms": "^14.2.6",
+        "@angular/material": "^14.2.5",
+        "@angular/platform-browser": "^14.2.6",
+        "@angular/platform-browser-dynamic": "^14.2.6",
+        "@angular/router": "^14.2.6",
+        "hammerjs": "^2.0.8",
+        "rxjs": "^7.5.7",
+        "tslib": "^2.4.0",
+        "zone.js": "^0.11.8"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^14.2.6",
+        "@angular/cli": "^14.2.6",
+        "@angular/compiler-cli": "^14.2.6",
+        "@angular/language-service": "^14.2.6",
+        "@types/node": "^18.11.0",
+        "ng-packagr": "^14.2.1",
+        "typescript": "^4.8.4"
+    }
+}

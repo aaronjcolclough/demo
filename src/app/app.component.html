@@ -1,0 +1,18 @@
+<section class="mat-typography mat-app-background app-frame"
+         [ngClass]="themer.isLight ? 'app-light' : 'app-dark'">
+  <mat-toolbar color="primary"
+               class="app-toolbar sticky-top rounded-bottom">
+    <span class="cursor-pointer"
+          routerLink="/">Demo</span>
+    <span fxFlex></span>
+    <button mat-icon-button
+            [ngClass]="themer.isLight ? 'color-amber' : 'color-text'"
+            (click)="themer.toggleTheme()">
+      <mat-icon *ngIf="themer.isLight">brightness_5</mat-icon>
+      <mat-icon *ngIf="!(themer.isLight)">brightness_3</mat-icon>
+    </button>
+  </mat-toolbar>
+  <section class="app-container">
+    <router-outlet></router-outlet>
+  </section>
+</section>

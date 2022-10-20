@@ -1,0 +1,10 @@
+.console {
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    overflow: auto;
+
+    pre {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+}

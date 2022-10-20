@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+@use './palette.scss';
+
+@include mat.core();
+
+@import './layout.scss';
+@import './styles.scss';
+@import './utility.scss';
+
+$light-palette: palette.get-palette();
+$light-theme: mat.define-light-theme(palette.get-theme($light-palette));
+@include style-theme($light-theme, $light-palette);
+@include mat.all-component-themes($light-theme);
+
+.app-dark {
+  $dark-palette: palette.get-palette(false);
+  $dark-theme: mat.define-dark-theme(palette.get-theme($dark-palette));
+  @include style-theme($dark-theme, $dark-palette);
+  @include mat.all-component-colors($dark-theme);
+}

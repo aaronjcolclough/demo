@@ -1,0 +1,27 @@
+<section fxLayout="column"
+         fxLayoutAlign="start stretch"
+         class="m4 card-outline-divider rounded">
+    <section fxLayout="row"
+             fxLayoutAlign="space-between center">
+        <p class="m8">Console</p>
+        <button mat-icon-button
+                class="m8"
+                (click)="toggleExpanded()">
+            <mat-icon>{{expanded ? 'keyboard_arrow_down' : 'keyboard_arrow_up'}}</mat-icon>
+        </button>
+    </section>
+    <mat-divider *ngIf="expanded"></mat-divider>
+    <section class="console"
+             [ngClass]="consoleStyle"
+             #console
+             [style.height.px]="height"
+             *ngIf="expanded">
+        <ng-container *ngIf="messages?.length > 0">
+            <pre *ngFor="let message of messages"
+                 class="m4"
+                 [ngClass]="message.isError ? 'color-red' : 'color-default'">{{message.message}}</pre>
+        </ng-container>
+        <pre *ngIf="!(messages?.length > 0)"
+             class="m4 bold">No Output Available</pre>
+    </section>
+</section>
