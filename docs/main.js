@@ -81,22 +81,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ 7146);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ 8987);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser/animations */ 7146);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/router */ 124);
 /* harmony import */ var _material_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./material.module */ 3806);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes */ 3529);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _components_general_controls_searchbar_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/general/controls/searchbar.component */ 7355);
 /* harmony import */ var _components_general_controls_selector_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/general/controls/selector.component */ 4353);
 /* harmony import */ var _components_general_layout_async_source_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/general/layout/async-source.component */ 5357);
 /* harmony import */ var _components_general_layout_card_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/general/layout/card.component */ 8216);
 /* harmony import */ var _components_general_layout_console_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/general/layout/console.component */ 2753);
 /* harmony import */ var _dialogs_confirm_confirm_dialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dialogs/confirm/confirm.dialog */ 5439);
-/* harmony import */ var _routes_home_home_route__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./routes/home/home.route */ 4765);
+/* harmony import */ var _directives_dynamic_component_loader_directive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./directives/dynamic-component-loader.directive */ 4253);
+/* harmony import */ var _pipes_component_name_pipe__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pipes/component-name.pipe */ 8230);
+/* harmony import */ var _routes_home_home_route__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./routes/home/home.route */ 4765);
+
+
 
 
 
@@ -120,18 +124,18 @@ AppModule.ɵfac = function AppModule_Factory(t) {
   return new (t || AppModule)();
 };
 
-AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({
+AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({
   type: AppModule,
   bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
 });
-AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({
-  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_14__.HttpClientModule, _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule, _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule.forRoot(_routes__WEBPACK_IMPORTED_MODULE_2__.Routes)]
+AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__.BrowserAnimationsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule, _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule, _angular_router__WEBPACK_IMPORTED_MODULE_17__.RouterModule.forRoot(_routes__WEBPACK_IMPORTED_MODULE_2__.Routes)]
 });
 
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](AppModule, {
-    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_general_controls_searchbar_component__WEBPACK_IMPORTED_MODULE_3__.SearchbarComponent, _components_general_controls_selector_component__WEBPACK_IMPORTED_MODULE_4__.SelectorComponent, _components_general_layout_async_source_component__WEBPACK_IMPORTED_MODULE_5__.AsyncSourceComponent, _components_general_layout_card_component__WEBPACK_IMPORTED_MODULE_6__.CardComponent, _components_general_layout_console_component__WEBPACK_IMPORTED_MODULE_7__.ConsoleComponent, _dialogs_confirm_confirm_dialog__WEBPACK_IMPORTED_MODULE_8__.ConfirmDialog, _routes_home_home_route__WEBPACK_IMPORTED_MODULE_9__.HomeRoute],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_13__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_14__.HttpClientModule, _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule, _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _components_general_controls_searchbar_component__WEBPACK_IMPORTED_MODULE_3__.SearchbarComponent, _components_general_controls_selector_component__WEBPACK_IMPORTED_MODULE_4__.SelectorComponent, _components_general_layout_async_source_component__WEBPACK_IMPORTED_MODULE_5__.AsyncSourceComponent, _components_general_layout_card_component__WEBPACK_IMPORTED_MODULE_6__.CardComponent, _components_general_layout_console_component__WEBPACK_IMPORTED_MODULE_7__.ConsoleComponent, _dialogs_confirm_confirm_dialog__WEBPACK_IMPORTED_MODULE_8__.ConfirmDialog, _directives_dynamic_component_loader_directive__WEBPACK_IMPORTED_MODULE_9__.DynamicComponentLoaderDirective, _pipes_component_name_pipe__WEBPACK_IMPORTED_MODULE_10__.ComponentNamePipe, _routes_home_home_route__WEBPACK_IMPORTED_MODULE_11__.HomeRoute],
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__.BrowserAnimationsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.ReactiveFormsModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule, _material_module__WEBPACK_IMPORTED_MODULE_0__.MaterialModule, _angular_router__WEBPACK_IMPORTED_MODULE_17__.RouterModule]
   });
 })();
 
@@ -647,6 +651,30 @@ ConfirmDialog.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
 
 /***/ }),
 
+/***/ 4253:
+/*!******************************************************************!*\
+  !*** ./src/app/directives/dynamic-component-loader.directive.ts ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DynamicComponentLoaderDirective": () => (/* binding */ DynamicComponentLoaderDirective)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+class DynamicComponentLoaderDirective {
+    constructor(viewContainerRef) {
+        this.viewContainerRef = viewContainerRef;
+    }
+}
+DynamicComponentLoaderDirective.ɵfac = function DynamicComponentLoaderDirective_Factory(t) { return new (t || DynamicComponentLoaderDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef)); };
+DynamicComponentLoaderDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: DynamicComponentLoaderDirective, selectors: [["", "loaderOutlet", ""]] });
+
+
+/***/ }),
+
 /***/ 3806:
 /*!************************************!*\
   !*** ./src/app/material.module.ts ***!
@@ -838,6 +866,48 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 610:
+/*!****************************************************!*\
+  !*** ./src/app/models/enums/component-suffixes.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ComponentNameSuffix": () => (/* binding */ ComponentNameSuffix)
+/* harmony export */ });
+var ComponentNameSuffix;
+(function (ComponentNameSuffix) {
+    ComponentNameSuffix["Api"] = "Api";
+    ComponentNameSuffix["Component"] = "Component";
+    ComponentNameSuffix["Dialog"] = "Dialog";
+    ComponentNameSuffix["Directive"] = "Directive";
+    ComponentNameSuffix["Form"] = "Form";
+    ComponentNameSuffix["Module"] = "Module";
+    ComponentNameSuffix["Pipe"] = "Pipe";
+    ComponentNameSuffix["Route"] = "Route";
+    ComponentNameSuffix["Service"] = "Service";
+})(ComponentNameSuffix || (ComponentNameSuffix = {}));
+
+
+/***/ }),
+
+/***/ 7608:
+/*!***************************************!*\
+  !*** ./src/app/models/enums/index.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ComponentNameSuffix": () => (/* reexport safe */ _component_suffixes__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix)
+/* harmony export */ });
+/* harmony import */ var _component_suffixes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component-suffixes */ 610);
+
+
+
+/***/ }),
+
 /***/ 2139:
 /*!*********************************!*\
   !*** ./src/app/models/index.ts ***!
@@ -846,18 +916,48 @@ __webpack_require__.r(__webpack_exports__);
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ComponentNameSuffix": () => (/* reexport safe */ _enums__WEBPACK_IMPORTED_MODULE_1__.ComponentNameSuffix),
 /* harmony export */   "Entity": () => (/* reexport safe */ _api__WEBPACK_IMPORTED_MODULE_0__.Entity),
-/* harmony export */   "LocalStorage": () => (/* reexport safe */ _storage__WEBPACK_IMPORTED_MODULE_2__.LocalStorage),
-/* harmony export */   "QuerySource": () => (/* reexport safe */ _query__WEBPACK_IMPORTED_MODULE_1__.QuerySource),
-/* harmony export */   "SessionStorage": () => (/* reexport safe */ _storage__WEBPACK_IMPORTED_MODULE_2__.SessionStorage)
+/* harmony export */   "LocalStorage": () => (/* reexport safe */ _storage__WEBPACK_IMPORTED_MODULE_4__.LocalStorage),
+/* harmony export */   "QuerySource": () => (/* reexport safe */ _query__WEBPACK_IMPORTED_MODULE_3__.QuerySource),
+/* harmony export */   "SessionStorage": () => (/* reexport safe */ _storage__WEBPACK_IMPORTED_MODULE_4__.SessionStorage)
 /* harmony export */ });
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api */ 1261);
-/* harmony import */ var _query__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./query */ 9097);
-/* harmony import */ var _storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./storage */ 5887);
-/* harmony import */ var _validation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./validation */ 7319);
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enums */ 7608);
+/* harmony import */ var _interfaces__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./interfaces */ 1711);
+/* harmony import */ var _query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./query */ 9097);
+/* harmony import */ var _storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./storage */ 5887);
+/* harmony import */ var _validation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./validation */ 7319);
 
 
 
+
+
+
+
+
+/***/ }),
+
+/***/ 90:
+/*!****************************************************************!*\
+  !*** ./src/app/models/interfaces/idynamic-component-loader.ts ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+
+
+
+/***/ }),
+
+/***/ 1711:
+/*!********************************************!*\
+  !*** ./src/app/models/interfaces/index.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _idynamic_component_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./idynamic-component-loader */ 90);
 
 
 
@@ -1179,6 +1279,64 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 8230:
+/*!**********************************************!*\
+  !*** ./src/app/pipes/component-name.pipe.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ComponentNamePipe": () => (/* binding */ ComponentNamePipe)
+/* harmony export */ });
+/* harmony import */ var _models__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models */ 2139);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+class ComponentNamePipe {
+    constructor() {
+        this.removeSuffix = (name) => {
+            if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Api))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Api, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Component))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Component, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Dialog))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Dialog, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Directive))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Directive, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Form))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Form, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Module))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Module, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Pipe))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Pipe, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Route))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Route, '');
+            else if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Service))
+                name.replace(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Service, '');
+            return name;
+        };
+        this.checkUpper = (c) => c == c.toUpperCase();
+        this.split = (name) => {
+            const letters = name.split("");
+            letters.forEach((x, i) => {
+                if (this.checkUpper(x) && !!i)
+                    letters.splice(i - 1, 0, " ");
+            });
+            return letters.join();
+        };
+    }
+    transform(name) {
+        this.removeSuffix(name);
+        this.split(name);
+    }
+}
+ComponentNamePipe.ɵfac = function ComponentNamePipe_Factory(t) { return new (t || ComponentNamePipe)(); };
+ComponentNamePipe.ɵpipe = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({ name: "componentName", type: ComponentNamePipe, pure: true });
+
+
+/***/ }),
+
 /***/ 4765:
 /*!*******************************************!*\
   !*** ./src/app/routes/home/home.route.ts ***!
@@ -1344,7 +1502,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ApiValidator": () => (/* binding */ ApiValidator)
 /* harmony export */ });
-/* harmony import */ var D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_Users_Aaron_dev_code_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 1989);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ 8977);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
@@ -1370,7 +1528,7 @@ class ApiValidator {
     };
 
     this.registerValidator = /*#__PURE__*/function () {
-      var _ref = (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (validator, form, control, error = 'api') {
+      var _ref = (0,C_Users_Aaron_dev_code_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (validator, form, control, error = 'api') {
         if (control.value) {
           const res = yield validator(form.value);
 
@@ -1378,7 +1536,7 @@ class ApiValidator {
         }
 
         return control.valueChanges.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.debounceTime)(350), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.distinctUntilChanged)()).subscribe( /*#__PURE__*/function () {
-          var _ref2 = (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
+          var _ref2 = (0,C_Users_Aaron_dev_code_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
             if (value) {
               const res = yield validator(form.value);
 
