@@ -101,7 +101,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "demo:build",
-            "port": "3000"
+            "port": 3000
           },
           "configurations": {
             "production": {

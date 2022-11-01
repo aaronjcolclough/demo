@@ -5,7 +5,8 @@
         "ng": "ng",
         "build": "ng build --configuration development",
         "deploy": "ng build --configuration development --output-path docs --base-href /demo/ && copy docs\\index.html docs\\404.html",
-        "start": "ng serve --configuration development"
+        "start": "ng serve --configuration development",
+        "watch": "ng build --configuration development --watch"
     },
     "private": true,
     "dependencies": {

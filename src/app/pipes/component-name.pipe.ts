@@ -40,4 +40,5 @@ export class ComponentNamePipe implements PipeTransform {
 
         return letters.join();
     }
+
 }

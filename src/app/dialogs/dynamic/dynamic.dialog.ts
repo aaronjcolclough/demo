@@ -1,13 +1,14 @@
 import { AfterViewInit, ChangeDetectorRef, Component, Inject, Type, ViewChild } from "@angular/core";
 import { MAT_DIALOG_DATA } from "@angular/material/dialog";
-import { IDynamicLoaderComponent } from "../../models";
-import { DynamicComponentLoaderDirective } from "../../directives";
+import { IDynamicLoaderComponent } from "src/app/models";
+import { DynamicComponentLoaderDirective } from "src/app/directives";
+import { ComponentNamePipe } from "src/app/pipes";
 
 @Component({
     selector: 'dynamic-dialog',
     templateUrl: 'dynamic.dialog.html'
 })
-export class DynamicDialog<T> implements AfterViewInit {
+export class DynamicDialog implements AfterViewInit {
     @ViewChild(DynamicComponentLoaderDirective) outlet!: DynamicComponentLoaderDirective
 
     constructor(
@@ -19,7 +20,8 @@ export class DynamicDialog<T> implements AfterViewInit {
     ) { }
 
     ngAfterViewInit(): void {
-        this.load()
+        this.load();
+        ComponentNamePipe.prototype.transform(DynamicDialog.name);
         // this.cd.detectChanges();
     }
 
