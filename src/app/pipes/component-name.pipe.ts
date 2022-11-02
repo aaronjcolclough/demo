@@ -12,9 +12,11 @@ export class ComponentNamePipe implements PipeTransform {
     transform(name: string) {
         this.removeSuffix(name);
         this.split(name)
+
+        return name;
     }
 
-    removeSuffix = (name: string) => {
+    removeSuffix(name: string) {
         if (name.includes(ComponentNameSuffix.Api)) name.replace(ComponentNameSuffix.Api, '');
         else if (name.includes(ComponentNameSuffix.Component)) name.replace(ComponentNameSuffix.Component, '');
         else if (name.includes(ComponentNameSuffix.Dialog)) name.replace(ComponentNameSuffix.Dialog, '');
@@ -28,9 +30,11 @@ export class ComponentNamePipe implements PipeTransform {
         return name;
     }
 
-    checkUpper = (c: string) => c == c.toUpperCase();
+    checkUpper(c: string) {
+        return c == c.toUpperCase();
+    }
 
-    split = (name: string) => {
+    split(name: string) {
         const letters: string[] = name.split("");
 
         letters.forEach((x: string, i: number) => {
