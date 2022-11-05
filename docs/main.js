@@ -203,7 +203,7 @@ class AbstractTableComponent {
     constructor(_liveAnnouncer) {
         this._liveAnnouncer = _liveAnnouncer;
         /** Announce the change in sort state for assistive technology. */
-        this.announceSortChange = (sortState) =>
+        this.announceSortChange = (sortState) => 
         // This example uses English messages. If your application supports
         // multiple language, you would internationalize these strings.
         // Furthermore, you can customize the message to add additional
@@ -2629,7 +2629,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ApiValidator": () => (/* binding */ ApiValidator)
 /* harmony export */ });
-/* harmony import */ var C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 1989);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ 8977);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
@@ -2655,7 +2655,7 @@ class ApiValidator {
     };
 
     this.registerValidator = /*#__PURE__*/function () {
-      var _ref = (0,C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (validator, form, control, error = 'api') {
+      var _ref = (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (validator, form, control, error = 'api') {
         if (control.value) {
           const res = yield validator(form.value);
 
@@ -2663,7 +2663,7 @@ class ApiValidator {
         }
 
         return control.valueChanges.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.debounceTime)(350), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.distinctUntilChanged)()).subscribe( /*#__PURE__*/function () {
-          var _ref2 = (0,C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
+          var _ref2 = (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
             if (value) {
               const res = yield validator(form.value);
 
