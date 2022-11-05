@@ -38,13 +38,13 @@ export abstract class EntityApi<T extends Entity> {
         this.queryUrl = `${this.api}query`;
     }
 
-    protected base = () => <T>{
-        id: 0,
-        name: '',
-        url: ''
-    }
+    // protected base = () => <T>{
+    //     id: 0,
+    //     name: '',
+    //     url: ''
+    // }
 
-    getBase = () => this.base();
+    // getBase = () => this.base();
 
     generateStorage = (entity: T): IStorage<T> =>
         new SessionStorage<T>(
@@ -57,7 +57,7 @@ export abstract class EntityApi<T extends Entity> {
         this.generator.generateSource<T>(
             this.queryUrl
         );
-        
+
     getById$ = (id: number): Observable<T> =>
         this.http.get<T>(`${this.api}getById/${id}`);
 

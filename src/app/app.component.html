@@ -3,7 +3,7 @@
     <mat-toolbar color="primary"
                  class="app-toolbar sticky-top rounded-bottom">
         <span class="cursor-pointer"
-              routerLink="/">Demo</span>
+              routerLink="/">Demos</span>
         <span fxFlex></span>
         <button mat-icon-button
                 [ngClass]="themer.isLight ? 'color-amber' : 'color-text'"
@@ -21,7 +21,7 @@
                         mode="side"
                         [opened]=true>
                 <link-card *ngFor="let d of Demos"
-                           [name]="d?.name"></link-card>
+                           [name]="d?.name" fxFlex></link-card>
             </mat-drawer>
             <router-outlet></router-outlet>
         </mat-drawer-container>

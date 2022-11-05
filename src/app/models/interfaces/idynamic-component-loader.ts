@@ -1,4 +1,4 @@
 export interface IDynamicLoaderComponent {
-    data: any; // setter
-    return: any; // getter
+    set data(data: any);
+    get return(); // getter
 }

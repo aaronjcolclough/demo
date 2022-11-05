@@ -1,1 +1,2 @@
-export { } from './dynamic.dialog';
+export { DynamicDialog } from './dynamic.dialog';
+
