@@ -2111,6 +2111,23 @@ a.mat-icon-button:visited {
   color: rgba(0, 0, 0, 0.87);
 }
 
+mat-drawer-container.container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+mat-drawer-container div.content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-drawer.sidenav {
+  padding: 20px;
+}
+
 mat-paginator.mat-paginator {
   background-color: #fafafa;
 }
@@ -6685,6 +6702,23 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .app-dark a.mat-icon-button,
 .app-dark a.mat-icon-button:visited {
   color: white;
+}
+
+.app-dark mat-drawer-container.container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.app-dark mat-drawer-container div.content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-dark mat-drawer.sidenav {
+  padding: 20px;
 }
 
 .app-dark mat-paginator.mat-paginator {
