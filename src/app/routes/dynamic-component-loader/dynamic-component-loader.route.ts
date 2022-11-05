@@ -9,7 +9,10 @@ import { UserApi } from 'src/app/services';
 
 @Component({
     selector: 'dynamic-component-loader-route',
-    templateUrl: 'dynamic-component-loader.route.html'
+    templateUrl: 'dynamic-component-loader.route.html',
+    host: {
+        'class': 'min-full-height'
+    }
 })
 export class DynamicComponentLoaderRoute {
     constructor(

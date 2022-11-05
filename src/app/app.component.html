@@ -17,11 +17,11 @@
                               autosize
                               fxFlexFill>
             <mat-drawer #drawer
-                        class="sidenav"
                         mode="side"
                         [opened]=true>
                 <link-card *ngFor="let d of Demos"
-                           [name]="d?.name" fxFlex></link-card>
+                           [name]="d?.name"
+                           fxFlex></link-card>
             </mat-drawer>
             <router-outlet></router-outlet>
         </mat-drawer-container>
