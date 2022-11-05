@@ -848,6 +848,15 @@ body {
   min-height: 100%;
 }
 
+.min-full-width {
+  width: 100%;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  width: -moz-available;
+  width: stretch;
+}
+
 .app-frame {
   height: 100%;
 }
@@ -2122,10 +2131,6 @@ mat-drawer-container div.content {
   height: 100%;
   align-items: center;
   justify-content: center;
-}
-
-mat-drawer.sidenav {
-  padding: 20px;
 }
 
 mat-paginator.mat-paginator {
@@ -6715,10 +6720,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   height: 100%;
   align-items: center;
   justify-content: center;
-}
-
-.app-dark mat-drawer.sidenav {
-  padding: 20px;
 }
 
 .app-dark mat-paginator.mat-paginator {
