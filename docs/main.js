@@ -1949,7 +1949,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Demos = [
-    new _demo__WEBPACK_IMPORTED_MODULE_1__.Demo(src_app_routes_dynamic_component_loader__WEBPACK_IMPORTED_MODULE_0__.DynamicComponentLoaderRoute, new Date(2022, 10, 5, 18, 0, 0, 0), 'dynamic-component-loader', 'A dynamic component loader is a directive constructed with a viewContainerRef. When the directive is place on a ng-template it transforms the element into an outlet for a component. This becomes extremely useful with components like dialogs since content projection is not a possibility with dialogs.')
+    new _demo__WEBPACK_IMPORTED_MODULE_1__.Demo(src_app_routes_dynamic_component_loader__WEBPACK_IMPORTED_MODULE_0__.DynamicComponentLoaderRoute, new Date(2022, 10, 5, 18, 0, 0, 0), 'dynamic-component-loader', 'A dynamic component loader is a directive constructed with a viewContainerRef. When the directive is place on a ng-template it transforms the element into an outlet for a component. This becomes extremely useful with components like dialogs since content projection is not a possibility.')
 ];
 
 
