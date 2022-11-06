@@ -1,58 +1,75 @@
-<form [formGroup]="value">
-    <mat-form-field appearance="fill">
-        <mat-label>name</mat-label>
-        <input matInput
-               formControlName="name">
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-        <mat-label>username</mat-label>
-        <input matInput
-               formControlName="username">
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-        <mat-label>email</mat-label>
-        <input matInput
-               formControlName="email">
-    </mat-form-field>
+<form [formGroup]="value"
+      fxLayout="column"
+      fxLayoutAlign="start stretch">
+    <section fxLayout="row"
+             fxLayoutAlign="space-between stretch">
+        <mat-form-field appearance="fill">
+            <mat-label>name</mat-label>
+            <input matInput
+                   formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>username</mat-label>
+            <input matInput
+                   formControlName="username">
+        </mat-form-field>
+    </section>
     <ng-container formGroupName="address">
-        <mat-form-field appearance="fill">
-            <mat-label>street</mat-label>
-            <input matInput
-                   formControlName="street">
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>suite</mat-label>
-            <input matInput
-                   formControlName="suite">
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>city</mat-label>
-            <input matInput
-                   formControlName="city">
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <mat-label>zipcode</mat-label>
-            <input matInput
-                   formControlName="zipcode">
-        </mat-form-field>
+        <section fxLayout="row"
+                 fxLayoutAlign="space-between stretch">
+            <mat-form-field appearance="fill">
+                <mat-label>street</mat-label>
+                <input matInput
+                       formControlName="street">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>suite</mat-label>
+                <input matInput
+                       formControlName="suite">
+            </mat-form-field>
+        </section>
+        <section fxLayout="row"
+                 fxLayoutAlign="space-between stretch">
+            <mat-form-field appearance="fill">
+                <mat-label>city</mat-label>
+                <input matInput
+                       formControlName="city">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>zipcode</mat-label>
+                <input matInput
+                       formControlName="zipcode">
+            </mat-form-field>
+        </section>
         <ng-container formGroupName="geo">
-            <mat-form-field appearance="fill">
-                <mat-label>lat</mat-label>
-                <input matInput
-                       formControlName="lat">
-            </mat-form-field>
-            <mat-form-field appearance="fill">
-                <mat-label>lng</mat-label>
-                <input matInput
-                       formControlName="lng">
-            </mat-form-field>
+            <section fxLayout="row"
+                     fxLayoutAlign="space-between stretch">
+                <mat-form-field appearance="fill">
+                    <mat-label>lat</mat-label>
+                    <input matInput
+                           formControlName="lat">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>lng</mat-label>
+                    <input matInput
+                           formControlName="lng">
+                </mat-form-field>
+            </section>
         </ng-container>
     </ng-container>
-    <mat-form-field appearance="fill">
-        <mat-label>phone</mat-label>
-        <input matInput
-               formControlName="phone">
-    </mat-form-field>
+    <section fxLayout="row"
+             fxLayoutAlign="space-between stretch">
+        <mat-form-field appearance="fill">
+            <mat-label>email</mat-label>
+            <input matInput
+                   formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>phone</mat-label>
+            <input matInput
+                   formControlName="phone">
+        </mat-form-field>
+    </section>
     <mat-form-field appearance="fill">
         <mat-label>website</mat-label>
         <input matInput
@@ -60,19 +77,19 @@
     </mat-form-field>
     <ng-container formGroupName="company">
         <mat-form-field appearance="fill">
-            <mat-label>name</mat-label>
+            <mat-label>company name</mat-label>
             <input matInput
                    formControlName="name">
         </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>catchPhrase</mat-label>
-            <input matInput
-                   formControlName="catchPhrase">
+            <textarea matInput
+                      formControlName="catchPhrase"></textarea>
         </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>bs</mat-label>
-            <input matInput
-                   formControlName="bs">
+            <textarea matInput
+                      formControlName="bs"></textarea>
         </mat-form-field>
     </ng-container>
 </form>
