@@ -1410,12 +1410,8 @@ class FormDialog extends _dynamic__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog {
   constructor(dialogRef, data) {
     var _this;
 
-    super(dialogRef, {
-      component: data.component,
-      inputData: data.inputData
-    });
+    super(dialogRef, data);
     _this = this;
-    this.data = data;
     this.save = /*#__PURE__*/(0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const res = yield _this.data.dataSvc.save(_this.outletRef?.instance?.value?.value);
       res && _this._dialogRef.close(res);
