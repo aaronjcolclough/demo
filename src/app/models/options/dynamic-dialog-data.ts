@@ -1,17 +1,17 @@
 import { Type } from "@angular/core";
 import { BaseApi } from "src/app/services";
 import { Entity } from "../api";
-import { IDynamicDialogData as IDynamicDialogData, IDynamicLoaderComponent } from "../interfaces";
+import { IDynamicDialogData as IDynamicDialogData, IBaseLoaderComponent } from "../interfaces";
 
 export class DynamicDialogData<T extends Entity, S extends BaseApi<T>>
     implements IDynamicDialogData<T, S> {
 
-    private _component: Type<IDynamicLoaderComponent>;
+    private _component: Type<IBaseLoaderComponent>;
     private _dataSvc: S;
     private _inputData: T;
 
     constructor(
-        component: Type<IDynamicLoaderComponent>,
+        component: Type<IBaseLoaderComponent>,
         dataSvc: S,
         inputData: T
     ) {
