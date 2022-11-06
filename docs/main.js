@@ -195,6 +195,11 @@ _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵsetComponentScope"](_components
 }, function () {
   return [_angular_common__WEBPACK_IMPORTED_MODULE_26__.AsyncPipe];
 });
+_angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵsetComponentScope"](_dialogs_form_form_dialog__WEBPACK_IMPORTED_MODULE_12__.FormDialog, function () {
+  return [_angular_material_button__WEBPACK_IMPORTED_MODULE_30__.MatButton, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogClose, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogTitle, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogContent, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogActions, _directives_dynamic_component_loader_directive__WEBPACK_IMPORTED_MODULE_15__.DynamicComponentLoaderDirective];
+}, function () {
+  return [_pipes_component_name_pipe__WEBPACK_IMPORTED_MODULE_17__.ComponentNamePipe];
+});
 _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵsetComponentScope"](_dialogs_dynamic_dynamic_dialog__WEBPACK_IMPORTED_MODULE_14__.DynamicDialog, function () {
   return [_angular_material_button__WEBPACK_IMPORTED_MODULE_30__.MatButton, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogClose, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogTitle, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogContent, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_31__.MatDialogActions, _directives_dynamic_component_loader_directive__WEBPACK_IMPORTED_MODULE_15__.DynamicComponentLoaderDirective];
 }, function () {
@@ -939,7 +944,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "BaseTableComponent": () => (/* binding */ BaseTableComponent)
 /* harmony export */ });
-/* harmony import */ var D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/paginator */ 6060);
 /* harmony import */ var _angular_material_sort__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/sort */ 2197);
@@ -974,7 +979,7 @@ class BaseTableComponent extends _abstract_abstract_table_component__WEBPACK_IMP
   ngOnInit() {
     var _this = this;
 
-    return (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this.sub = _this.api.entities$.subscribe(x => _this.dataSource.data = x);
     })();
   }
@@ -1289,6 +1294,22 @@ ConfirmDialog.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
 
 /***/ }),
 
+/***/ 9508:
+/*!******************************************!*\
+  !*** ./src/app/dialogs/confirm/index.ts ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ConfirmDialog": () => (/* reexport safe */ _confirm_dialog__WEBPACK_IMPORTED_MODULE_0__.ConfirmDialog)
+/* harmony export */ });
+/* harmony import */ var _confirm_dialog__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./confirm.dialog */ 5439);
+
+
+
+/***/ }),
+
 /***/ 30:
 /*!***************************************************!*\
   !*** ./src/app/dialogs/dynamic/dynamic.dialog.ts ***!
@@ -1315,11 +1336,11 @@ class DynamicDialog {
         this.load = () => {
             this.outletRef = this.outlet?.viewContainerRef?.createComponent(this.data.component);
             this.outletRef.instance.data = this.data?.inputData;
-            // this.outletRef?.changeDetectorRef?.detectChanges();
+            this.outletRef?.changeDetectorRef?.detectChanges();
         };
     }
     ngAfterViewInit() {
-        setTimeout(() => this.load(), 0);
+        this.load();
     }
 }
 DynamicDialog.ɵfac = function DynamicDialog_Factory(t) { return new (t || DynamicDialog)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__.MatDialogRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__.MAT_DIALOG_DATA)); };
@@ -1373,7 +1394,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "FormDialog": () => (/* binding */ FormDialog)
 /* harmony export */ });
-/* harmony import */ var D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
 /* harmony import */ var _dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dynamic */ 4718);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
@@ -1381,6 +1402,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+function FormDialog_ng_template_5_Template(rf, ctx) {}
 
 class FormDialog extends _dynamic__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog {
   constructor(dialogRef, data) {
@@ -1392,7 +1416,7 @@ class FormDialog extends _dynamic__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog {
     });
     _this = this;
     this.data = data;
-    this.save = /*#__PURE__*/(0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.save = /*#__PURE__*/(0,C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const res = yield _this.data.dataSvc.save(_this.outletRef?.instance?.value?.value);
       res && _this._dialogRef.close(res);
     });
@@ -1408,11 +1432,91 @@ FormDialog.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵ
   type: FormDialog,
   selectors: [["form-dialog"]],
   features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵInheritDefinitionFeature"]],
-  decls: 0,
-  vars: 0,
-  template: function FormDialog_Template(rf, ctx) {},
+  decls: 11,
+  vars: 4,
+  consts: [[1, "mat-typography"], ["mat-dialog-title", ""], ["loaderOutlet", ""], ["mat-stroked-button", "", 1, "color-green", 3, "click"], ["mat-stroked-button", "", 3, "mat-dialog-close"]],
+  template: function FormDialog_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h2", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpipe"](3, "componentName");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "mat-dialog-content");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](5, FormDialog_ng_template_5_Template, 0, 0, "ng-template", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "mat-dialog-actions")(7, "button", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function FormDialog_Template_button_click_7_listener() {
+        return ctx.save();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](8, "Save");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "button", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](10, "Cancel");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+    }
+
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpipeBind1"](3, 2, ctx.data == null ? null : ctx.data.component == null ? null : ctx.data.component.name));
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("mat-dialog-close", false);
+    }
+  },
   encapsulation: 2
 });
+
+/***/ }),
+
+/***/ 2683:
+/*!***************************************!*\
+  !*** ./src/app/dialogs/form/index.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FormDialog": () => (/* reexport safe */ _form_dialog__WEBPACK_IMPORTED_MODULE_0__.FormDialog),
+/* harmony export */   "FormDialogs": () => (/* binding */ FormDialogs)
+/* harmony export */ });
+/* harmony import */ var _form_dialog__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form.dialog */ 6124);
+
+const FormDialogs = [
+    _form_dialog__WEBPACK_IMPORTED_MODULE_0__.FormDialog
+];
+
+
+
+/***/ }),
+
+/***/ 3328:
+/*!**********************************!*\
+  !*** ./src/app/dialogs/index.ts ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ConfirmDialog": () => (/* reexport safe */ _confirm__WEBPACK_IMPORTED_MODULE_0__.ConfirmDialog),
+/* harmony export */   "Dialogs": () => (/* binding */ Dialogs),
+/* harmony export */   "DynamicDialog": () => (/* reexport safe */ _dynamic__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog),
+/* harmony export */   "FormDialog": () => (/* reexport safe */ _form__WEBPACK_IMPORTED_MODULE_2__.FormDialog),
+/* harmony export */   "FormDialogs": () => (/* reexport safe */ _form__WEBPACK_IMPORTED_MODULE_2__.FormDialogs)
+/* harmony export */ });
+/* harmony import */ var _confirm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./confirm */ 9508);
+/* harmony import */ var _dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dynamic */ 4718);
+/* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form */ 2683);
+
+
+
+const Dialogs = [
+    ..._form__WEBPACK_IMPORTED_MODULE_2__.FormDialogs,
+    _confirm__WEBPACK_IMPORTED_MODULE_0__.ConfirmDialog,
+    _dynamic__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog
+];
+
+
+
+
 
 /***/ }),
 
@@ -2635,8 +2739,8 @@ __webpack_require__.r(__webpack_exports__);
 class ComponentNamePipe {
     transform(name) {
         this.removeSuffix(name);
-        this.split(name);
-        return name;
+        const result = this.split(name);
+        return result;
     }
     removeSuffix(name) {
         if (name.includes(_models__WEBPACK_IMPORTED_MODULE_0__.ComponentNameSuffix.Api))
@@ -2663,12 +2767,9 @@ class ComponentNamePipe {
         return c == c.toUpperCase();
     }
     split(name) {
-        const letters = name.split("");
-        letters.forEach((x, i) => {
-            if (this.checkUpper(x) && !!i)
-                letters.splice(i - 1, 0, " ");
-        });
-        return letters.join();
+        const wordRe = /($[a-z])|[A-Z][^A-Z]+/g;
+        const word = name.match(wordRe).join(" ");
+        return word;
     }
 }
 ComponentNamePipe.ɵfac = function ComponentNamePipe_Factory(t) { return new (t || ComponentNamePipe)(); };
@@ -2688,13 +2789,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "DynamicComponentLoaderRoute": () => (/* binding */ DynamicComponentLoaderRoute)
 /* harmony export */ });
 /* harmony import */ var src_app_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/components */ 9771);
-/* harmony import */ var src_app_dialogs_dynamic_dynamic_dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/dialogs/dynamic/dynamic.dialog */ 30);
-/* harmony import */ var src_app_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/forms */ 4953);
-/* harmony import */ var src_app_models__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/models */ 2139);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var src_app_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services */ 1866);
+/* harmony import */ var src_app_dialogs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/dialogs */ 3328);
+/* harmony import */ var src_app_dialogs_dynamic_dynamic_dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/dialogs/dynamic/dynamic.dialog */ 30);
+/* harmony import */ var src_app_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/forms */ 4953);
+/* harmony import */ var src_app_models__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/models */ 2139);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var src_app_services__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services */ 1866);
+
 
 
 
@@ -2708,16 +2811,16 @@ class DynamicComponentLoaderRoute {
         this._dialog = _dialog;
         this._fb = _fb;
         this.userApi = userApi;
-        this.info = () => this._dialog.open(src_app_dialogs_dynamic_dynamic_dialog__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog, {
+        this.info = () => this._dialog.open(src_app_dialogs_dynamic_dynamic_dialog__WEBPACK_IMPORTED_MODULE_2__.DynamicDialog, {
             data: {
                 component: src_app_components__WEBPACK_IMPORTED_MODULE_0__.DemoInfoComponent,
                 inputData: this._demo
             }
         });
-        this.edit = (user) => this._dialog.open(src_app_dialogs_dynamic_dynamic_dialog__WEBPACK_IMPORTED_MODULE_1__.DynamicDialog, {
+        this.edit = (user) => this._dialog.open(src_app_dialogs__WEBPACK_IMPORTED_MODULE_1__.FormDialog, {
             data: {
-                component: src_app_forms__WEBPACK_IMPORTED_MODULE_2__.UserForm,
-                inputData: (0,src_app_models__WEBPACK_IMPORTED_MODULE_3__.GenerateUserForm)(user, this._fb),
+                component: src_app_forms__WEBPACK_IMPORTED_MODULE_3__.UserForm,
+                inputData: (0,src_app_models__WEBPACK_IMPORTED_MODULE_4__.GenerateUserForm)(user, this._fb),
                 dataSvc: this.userApi
             },
             width: '500px',
@@ -2726,17 +2829,17 @@ class DynamicComponentLoaderRoute {
         })
             .afterClosed()
             .subscribe(res => console.log("dialog output", res));
-        this._demo = src_app_models__WEBPACK_IMPORTED_MODULE_3__.Demos.at(0);
+        this._demo = src_app_models__WEBPACK_IMPORTED_MODULE_4__.Demos.at(0);
     }
     ngOnInit() {
         this.info();
     }
 }
-DynamicComponentLoaderRoute.ɵfac = function DynamicComponentLoaderRoute_Factory(t) { return new (t || DynamicComponentLoaderRoute)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_6__.MatDialog), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_7__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](src_app_services__WEBPACK_IMPORTED_MODULE_4__.UserApi)); };
-DynamicComponentLoaderRoute.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: DynamicComponentLoaderRoute, selectors: [["dynamic-component-loader-route"]], decls: 1, vars: 0, consts: [[1, "full-height", 3, "edit"]], template: function DynamicComponentLoaderRoute_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "user-table", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("edit", function DynamicComponentLoaderRoute_Template_user_table_edit_0_listener($event) { return ctx.edit($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+DynamicComponentLoaderRoute.ɵfac = function DynamicComponentLoaderRoute_Factory(t) { return new (t || DynamicComponentLoaderRoute)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__.MatDialog), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_8__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](src_app_services__WEBPACK_IMPORTED_MODULE_5__.UserApi)); };
+DynamicComponentLoaderRoute.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: DynamicComponentLoaderRoute, selectors: [["dynamic-component-loader-route"]], decls: 1, vars: 0, consts: [[1, "full-height", 3, "edit"]], template: function DynamicComponentLoaderRoute_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "user-table", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("edit", function DynamicComponentLoaderRoute_Template_user_table_edit_0_listener($event) { return ctx.edit($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
     } }, encapsulation: 2 });
 
 
@@ -3013,7 +3116,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ApiValidator": () => (/* binding */ ApiValidator)
 /* harmony export */ });
-/* harmony import */ var D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 1989);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ 8977);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
@@ -3039,7 +3142,7 @@ class ApiValidator {
     };
 
     this.registerValidator = /*#__PURE__*/function () {
-      var _ref = (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (validator, form, control, error = 'api') {
+      var _ref = (0,C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (validator, form, control, error = 'api') {
         if (control.value) {
           const res = yield validator(form.value);
 
@@ -3047,7 +3150,7 @@ class ApiValidator {
         }
 
         return control.valueChanges.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.debounceTime)(350), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.distinctUntilChanged)()).subscribe( /*#__PURE__*/function () {
-          var _ref2 = (0,D_a_demo_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
+          var _ref2 = (0,C_Users_rde37_dev_demo_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
             if (value) {
               const res = yield validator(form.value);
 
