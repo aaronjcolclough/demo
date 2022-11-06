@@ -11,9 +11,9 @@ import { ComponentNameSuffix } from '../models';
 export class ComponentNamePipe implements PipeTransform {
     transform(name: string) {
         this.removeSuffix(name);
-        this.split(name)
+        const result = this.split(name)
 
-        return name;
+        return result;
     }
 
     removeSuffix(name: string) {
@@ -35,14 +35,9 @@ export class ComponentNamePipe implements PipeTransform {
     }
 
     split(name: string) {
-        const letters: string[] = name.split("");
+        const wordRe = /($[a-z])|[A-Z][^A-Z]+/g;
+        const word = name.match(wordRe).join(" ");
 
-        letters.forEach((x: string, i: number) => {
-            if (this.checkUpper(x) && !!i)
-                letters.splice(i - 1, 0, " ");
-        });
-
-        return letters.join();
+        return word;
     }
-
 }

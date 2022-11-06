@@ -1,0 +1,13 @@
+<div class="mat-typography">
+    <h2 mat-dialog-title>{{data?.component?.name | componentName}}</h2>
+    <mat-dialog-content>
+        <ng-template loaderOutlet></ng-template>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button class="color-green"
+                mat-stroked-button
+                (click)="save()">Save</button>
+        <button mat-stroked-button
+                [mat-dialog-close]="false">Cancel</button>
+    </mat-dialog-actions>
+</div>

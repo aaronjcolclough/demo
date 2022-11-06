@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 
 import { MatDialog } from '@angular/material/dialog';
 import { DemoInfoComponent } from 'src/app/components';
+import { FormDialog } from 'src/app/dialogs';
 import { DynamicDialog } from 'src/app/dialogs/dynamic/dynamic.dialog';
 import { UserForm } from 'src/app/forms';
 import { Demo, Demos, GenerateUserForm, User } from 'src/app/models';
@@ -32,7 +33,7 @@ export class DynamicComponentLoaderRoute implements OnInit {
         }
     })
 
-    edit = (user: User) => this._dialog.open(DynamicDialog, {
+    edit = (user: User) => this._dialog.open(FormDialog, {
         data: {
             component: UserForm,
             inputData: GenerateUserForm(user, this._fb),

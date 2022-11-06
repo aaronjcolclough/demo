@@ -20,13 +20,13 @@ export class DynamicDialog<T, I extends IBaseLoaderComponent<T>>
     ) { }
 
     ngAfterViewInit(): void {
-        setTimeout(() => this.load(), 0);
+        this.load();
     }
 
     load = (): void => {
         this.outletRef = this.outlet?.viewContainerRef?.createComponent<I>(this.data.component);
 
         this.outletRef.instance.data = this.data?.inputData;
-        // this.outletRef?.changeDetectorRef?.detectChanges();
+        this.outletRef?.changeDetectorRef?.detectChanges();
     }
 }
