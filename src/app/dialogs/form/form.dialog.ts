@@ -10,13 +10,14 @@ import { FormGroup } from "@angular/forms";
     templateUrl: 'form.dialog.html'
 })
 export class FormDialog<T extends FormGroup, E extends Entity, S extends BaseApi<E>>
-    extends DynamicDialog<T, IReturnableLoaderComponent<T>> implements AfterViewInit {
+    extends DynamicDialog<T, IReturnableLoaderComponent<T>, IFormDialogData<T, E, S>>
+    implements AfterViewInit {
 
     constructor(
         dialogRef: MatDialogRef<FormDialog<T, E, S>>,
-        @Inject(MAT_DIALOG_DATA) public data: IFormDialogData<T, E, S>
+        @Inject(MAT_DIALOG_DATA) data: IFormDialogData<T, E, S>
     ) {
-        super(dialogRef, { component: data.component, inputData: data.inputData });
+        super(dialogRef, data);
     }
 
     save = async () => {

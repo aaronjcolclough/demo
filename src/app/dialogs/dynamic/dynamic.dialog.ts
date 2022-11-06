@@ -7,16 +7,15 @@ import { DynamicComponentLoaderDirective } from "src/app/directives";
     selector: 'dynamic-dialog',
     templateUrl: 'dynamic.dialog.html'
 })
-export class DynamicDialog<T, I extends IBaseLoaderComponent<T>>
+export class DynamicDialog<T, I extends IBaseLoaderComponent<T>, D extends IDynamicDialogData<T, I>>
     implements AfterViewInit {
 
     @ViewChild(DynamicComponentLoaderDirective) outlet!: DynamicComponentLoaderDirective
-
     outletRef: ComponentRef<I>;
 
     constructor(
-        protected _dialogRef: MatDialogRef<DynamicDialog<T, I>>,
-        @Inject(MAT_DIALOG_DATA) public data: IDynamicDialogData<T, I>
+        protected _dialogRef: MatDialogRef<DynamicDialog<T, I, D>>,
+        @Inject(MAT_DIALOG_DATA) protected data: D
     ) { }
 
     ngAfterViewInit(): void {
